@@ -16,3 +16,6 @@
 
 # .hcl files from Terraform v0.14 and newer
 *.hcl
+
+# Backend Secrets
+backend-config.txt
