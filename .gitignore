@@ -17,5 +17,6 @@
 # .hcl files from Terraform v0.14 and newer
 *.hcl
 
-# Backend Secrets
+# Secrets
 backend-config.txt
+kubeconfig.yaml
