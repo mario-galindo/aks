@@ -18,5 +18,5 @@
 *.hcl
 
 # Secrets
-backend-config.txt
-kubeconfig.yaml
+*backend-config*
+*kubeconfig*
