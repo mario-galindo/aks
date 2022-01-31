@@ -1,9 +1,9 @@
-resource "azurerm_kubernetes_cluster" "example" {
-  name                = "example-aks1"
-  location            = azurerm_resource_group.example.location
-  resource_group_name = azurerm_resource_group.example.name
-  node_resource_group = "example-resources-ancillary"
-  dns_prefix          = "exampleaks1"
+resource "azurerm_kubernetes_cluster" "my-aks-cluster" {
+  name                = "my-cluster-aks"
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+  node_resource_group = concat(azurerm_resource_group.rg.name,"-","ancillary")
+  dns_prefix          = "myclusteraks"
 
   default_node_pool {
     name       = "default"
