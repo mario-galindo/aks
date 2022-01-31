@@ -1,5 +1,5 @@
-resource "azurerm_kubernetes_cluster" "my-aks-cluster" {
-  name                = "my-cluster-aks"
+resource "azurerm_kubernetes_cluster" "myclusteraks" {
+  name                = "mycluster-aks"
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
   node_resource_group = concat(azurerm_resource_group.rg.name,"-","ancillary")
